@@ -1,0 +1,256 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      The target system is: Generic -  - x86_64
+      The host system is: Linux - 7.0.0-42-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/ps5-payload-sdk/bin/prospero-clang 
+      Build flags: 
+      Id flags: -c;--target=x86_64-sie-ps5 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        /home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/ps5-payload-sdk/bin/prospero-clang++ 
+      Build flags: 
+      Id flags: -c;--target=x86_64-sie-ps5 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-bjskXA"
+      binary: "/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-bjskXA"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-sie-ps5"
+      CMAKE_C_COMPILER_TARGET: "x86_64-sie-ps5"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-bjskXA'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_33acf
+        [1/2] /opt/ps5-payload-sdk/bin/prospero-clang --target=x86_64-sie-ps5   -v -MD -MT CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-sie-ps5
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-18/bin
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-sie-ps5 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -mframe-pointer=non-leaf -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-plt -funwind-tables=2 -fno-use-init-array -fvisibility-global-new-delete=source -fvisibility-from-dllstorageclass -fvisibility-dllexport=protected -fvisibility-nodllstorageclass=default -fvisibility-externs-dllimport=default -fvisibility-externs-nodllstorageclass=default -target-cpu znver2 -gno-column-info -debugger-tuning=sce -mllvm -generate-arange-section -debug-forward-template-params -dwarf-explicit-import -fdebug-compilation-dir=/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-bjskXA -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-bjskXA -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj.d -MT CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj -sys-header-deps -isysroot /opt/ps5-payload-sdk -isystem /opt/ps5-payload-sdk/target/include -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-externc-isystem /opt/ps5-payload-sdk/target/include -internal-externc-isystem /opt/ps5-payload-sdk/target/include_common -ferror-limit 19 -femulated-tls -fgnuc-version=4.2.1 -fdeclspec -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        ignoring duplicate directory "/opt/ps5-payload-sdk/target/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/ps5-payload-sdk/target/include
+         /usr/lib/llvm-18/lib/clang/18/include
+         /opt/ps5-payload-sdk/target/include_common
+        End of search list.
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_33acf.a && /opt/ps5-payload-sdk/bin/llvm-ar qc libcmTC_33acf.a  CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj && /opt/ps5-payload-sdk/bin/llvm-ranlib libcmTC_33acf.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/ps5-payload-sdk/target/include]
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/opt/ps5-payload-sdk/target/include_common]
+        end of search list found
+        collapse include dir [/opt/ps5-payload-sdk/target/include] ==> [/opt/ps5-payload-sdk/target/include]
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/opt/ps5-payload-sdk/target/include_common] ==> [/opt/ps5-payload-sdk/target/include_common]
+        implicit include dirs: [/opt/ps5-payload-sdk/target/include;/usr/lib/llvm-18/lib/clang/18/include;/opt/ps5-payload-sdk/target/include_common]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-bjskXA']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_33acf]
+        ignore line: [[1/2] /opt/ps5-payload-sdk/bin/prospero-clang --target=x86_64-sie-ps5   -v -MD -MT CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-sie-ps5]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-18/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-sie-ps5 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -mframe-pointer=non-leaf -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-plt -funwind-tables=2 -fno-use-init-array -fvisibility-global-new-delete=source -fvisibility-from-dllstorageclass -fvisibility-dllexport=protected -fvisibility-nodllstorageclass=default -fvisibility-externs-dllimport=default -fvisibility-externs-nodllstorageclass=default -target-cpu znver2 -gno-column-info -debugger-tuning=sce -mllvm -generate-arange-section -debug-forward-template-params -dwarf-explicit-import -fdebug-compilation-dir=/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-bjskXA -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-bjskXA -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj.d -MT CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj -sys-header-deps -isysroot /opt/ps5-payload-sdk -isystem /opt/ps5-payload-sdk/target/include -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-externc-isystem /opt/ps5-payload-sdk/target/include -internal-externc-isystem /opt/ps5-payload-sdk/target/include_common -ferror-limit 19 -femulated-tls -fgnuc-version=4.2.1 -fdeclspec -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring duplicate directory "/opt/ps5-payload-sdk/target/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/ps5-payload-sdk/target/include]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /opt/ps5-payload-sdk/target/include_common]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/cmake -E rm -f libcmTC_33acf.a && /opt/ps5-payload-sdk/bin/llvm-ar qc libcmTC_33acf.a  CMakeFiles/cmTC_33acf.dir/CMakeCCompilerABI.c.obj && /opt/ps5-payload-sdk/bin/llvm-ranlib libcmTC_33acf.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-WPUVCU"
+      binary: "/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-WPUVCU"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-sie-ps5"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_C_COMPILER_TARGET: "x86_64-sie-ps5"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-WPUVCU'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b4a8d
+        [1/2] /opt/ps5-payload-sdk/bin/prospero-clang++ --target=x86_64-sie-ps5   -v -MD -MT CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 18.1.3 (1ubuntu1)
+        Target: x86_64-sie-ps5
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-18/bin
+         (in-process)
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-sie-ps5 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -mframe-pointer=non-leaf -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-plt -funwind-tables=2 -fno-use-init-array -fvisibility-global-new-delete=source -fvisibility-from-dllstorageclass -fvisibility-dllexport=protected -fvisibility-nodllstorageclass=default -fvisibility-externs-dllimport=default -fvisibility-externs-nodllstorageclass=default -target-cpu znver2 -gno-column-info -debugger-tuning=sce -mllvm -generate-arange-section -debug-forward-template-params -dwarf-explicit-import -fdebug-compilation-dir=/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-WPUVCU -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-WPUVCU -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj.d -MT CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -isysroot /opt/ps5-payload-sdk -internal-isystem /opt/ps5-payload-sdk/target/include/c++/v1 -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-externc-isystem /opt/ps5-payload-sdk/target/include -internal-externc-isystem /opt/ps5-payload-sdk/target/include_common -fdeprecated-macro -ferror-limit 19 -femulated-tls -fgnuc-version=4.2.1 -fdeclspec -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/ps5-payload-sdk/target/include/c++/v1
+         /usr/lib/llvm-18/lib/clang/18/include
+         /opt/ps5-payload-sdk/target/include
+         /opt/ps5-payload-sdk/target/include_common
+        End of search list.
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_b4a8d.a && /opt/ps5-payload-sdk/bin/llvm-ar qc libcmTC_b4a8d.a  CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj && /opt/ps5-payload-sdk/bin/llvm-ranlib libcmTC_b4a8d.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/ps5-payload-sdk/target/include/c++/v1]
+          add: [/usr/lib/llvm-18/lib/clang/18/include]
+          add: [/opt/ps5-payload-sdk/target/include]
+          add: [/opt/ps5-payload-sdk/target/include_common]
+        end of search list found
+        collapse include dir [/opt/ps5-payload-sdk/target/include/c++/v1] ==> [/opt/ps5-payload-sdk/target/include/c++/v1]
+        collapse include dir [/usr/lib/llvm-18/lib/clang/18/include] ==> [/usr/lib/llvm-18/lib/clang/18/include]
+        collapse include dir [/opt/ps5-payload-sdk/target/include] ==> [/opt/ps5-payload-sdk/target/include]
+        collapse include dir [/opt/ps5-payload-sdk/target/include_common] ==> [/opt/ps5-payload-sdk/target/include_common]
+        implicit include dirs: [/opt/ps5-payload-sdk/target/include/c++/v1;/usr/lib/llvm-18/lib/clang/18/include;/opt/ps5-payload-sdk/target/include;/opt/ps5-payload-sdk/target/include_common]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-WPUVCU']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_b4a8d]
+        ignore line: [[1/2] /opt/ps5-payload-sdk/bin/prospero-clang++ --target=x86_64-sie-ps5   -v -MD -MT CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
+        ignore line: [Target: x86_64-sie-ps5]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-18/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-sie-ps5 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -mframe-pointer=non-leaf -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=on -fno-rounding-math -mconstructor-aliases -fno-plt -funwind-tables=2 -fno-use-init-array -fvisibility-global-new-delete=source -fvisibility-from-dllstorageclass -fvisibility-dllexport=protected -fvisibility-nodllstorageclass=default -fvisibility-externs-dllimport=default -fvisibility-externs-nodllstorageclass=default -target-cpu znver2 -gno-column-info -debugger-tuning=sce -mllvm -generate-arange-section -debug-forward-template-params -dwarf-explicit-import -fdebug-compilation-dir=/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-WPUVCU -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/spaceraleriscool/Downloads/skyportal-payload/build-ps5/CMakeFiles/CMakeScratch/TryCompile-WPUVCU -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj.d -MT CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -isysroot /opt/ps5-payload-sdk -internal-isystem /opt/ps5-payload-sdk/target/include/c++/v1 -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-externc-isystem /opt/ps5-payload-sdk/target/include -internal-externc-isystem /opt/ps5-payload-sdk/target/include_common -fdeprecated-macro -ferror-limit 19 -femulated-tls -fgnuc-version=4.2.1 -fdeclspec -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/ps5-payload-sdk/target/include/c++/v1]
+        ignore line: [ /usr/lib/llvm-18/lib/clang/18/include]
+        ignore line: [ /opt/ps5-payload-sdk/target/include]
+        ignore line: [ /opt/ps5-payload-sdk/target/include_common]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/cmake -E rm -f libcmTC_b4a8d.a && /opt/ps5-payload-sdk/bin/llvm-ar qc libcmTC_b4a8d.a  CMakeFiles/cmTC_b4a8d.dir/CMakeCXXCompilerABI.cpp.obj && /opt/ps5-payload-sdk/bin/llvm-ranlib libcmTC_b4a8d.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...
